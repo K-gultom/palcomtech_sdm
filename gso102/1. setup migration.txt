@@ -1,0 +1,15 @@
+1. setup migration
+2. setup database
+3. setup .env database_name=
+4. jalankan php artisan key:generate
+5. buat middleware baru, php artisan make:middleware Nologin
+	=> Tambahkan perintah ini 
+	if (Auth::user()) {
+        	return redirect('/');
+        }
+6. Setting Routing,
+7. buat view, register
+8. buat controller, register
+9. jalankan migrate artisan
+10. buat login view
+11. buat login controller
